@@ -1,13 +1,16 @@
 # features and working of the project
 Made with React.js (with vite) , TypeScript  and Tailwind CSS
 
+the main file( ContactDataRenderer.tsx ) is in src folder wiht Chips.tsx as a component used for props
+src/ContactDataRenderer.tsx
+
 # APPROACH
 taken an input form with name,email,contactNumber with "User" as an interface and used useState hook to manage state changes in the field value 
-as the user types the contact (state variable) (with useState hook used) fields the setContact field is updated and using handleSubmit function the state of the contact is passed to the user and then it is updated in the user array wiht the help of useState hook (setUser function)
-FOR searching 
+-as the user types the contact (state variable) (with useState hook used) fields the setContact field is updated and using handleSubmit function the state of the contact is passed to the user and then it is updated in the user array wiht the help of useState hook (setUser function)
+-FOR searching 
 i have used array.filter method and used toLowerCase in case of case mismatching 
 FOR searching i have used handleSearch funciton which returns an array containning the filtered part according to the query
-FOR mapping out the user i have used array.map with value and index for displaying the user
+-FOR mapping out the user i have used array.map with value and index for displaying the user
 
 FOR displaying the contacts
 i have used a component name (Chips.tsx) and passed contact details as props and mapped the user array
