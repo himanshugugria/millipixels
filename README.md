@@ -1,3 +1,26 @@
+# features and working of the project
+Made with React.js (with vite) , TypeScript  and Tailwind CSS
+
+# APPROACH
+taken an input form with name,email,contactNumber with "User" as an interface and used useState hook to manage state changes in the field value 
+as the user types the contact (state variable) (with useState hook used) fields the setContact field is updated and using handleSubmit function the state of the contact is passed to the user and then it is updated in the user array wiht the help of useState hook (setUser function)
+FOR searching 
+i have used array.filter method and used toLowerCase in case of case mismatching 
+FOR searching i have used handleSearch funciton which returns an array containning the filtered part according to the query
+FOR mapping out the user i have used array.map with value and index for displaying the user
+
+FOR displaying the contacts
+i have used a component name (Chips.tsx) and passed contact details as props and mapped the user array
+
+# Assumptions
+i have made some assumptions like the number field can be of any length and the name and email field are string values with any name,email
+
+# for running the project locally
+install tailwind using documentation (although it is installed as a dependency so may not need it)
+npm run dev 
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
